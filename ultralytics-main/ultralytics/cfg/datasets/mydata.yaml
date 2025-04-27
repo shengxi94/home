@@ -1,0 +1,14 @@
+path: D:/phpstudy_pro/WWW/yoloapi.local/ultralytics-main/ultralytics/cfg/datasets/data-wh
+test: images/test
+train: images/train
+val: images/val
+
+# 标签路径
+test_labels: labels/test
+train_labels: labels/train
+val_labels: labels/val
+
+# 分割任务
+segments: True
+nc: 4  # 类别数
+names: ['Rebar-Exposure', 'Corrosion', 'Efflorescence', 'Cracked']

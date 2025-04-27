@@ -1,0 +1,10 @@
+server {
+    listen 80;
+    server_name yoloapi.local;
+    
+    location /api/ {
+        proxy_pass http://10.14.145.132:5000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}
